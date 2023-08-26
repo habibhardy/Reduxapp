@@ -2,37 +2,63 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task_{
+   width: 440px;
+   height: 60px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   border-radius:1rem;
+   margin-top: 1.5rem;
+   gap: 2rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   background-color: rgba(251, 255, 0, 0.075);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   transition: all 300ms ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task_done{
+  width: 440px;
+  height: 60px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  border-radius:1rem;
+  margin-top: 1.5rem;
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: rgba(59, 241, 42, 0.26);
+  box-shadow: rgba(0, 255, 34, 0.35) 0px 5px 15px;
+  transition: all 300ms ease;
+}
+.task_deleted{
+  width: 440px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius:1rem;
+  margin-top: 1.5rem;
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: rgba(59, 241, 42, 0);
+  box-shadow: rgba(0, 255, 34, 0) 0px 5px 15px;
+  opacity: 0;
+  transition: all 300ms ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.actions{
+  width: 150px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  border-radius:1rem;
 }
